@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+		<bean id="m" class="com.model.Movie">
+			<property name="movieName" value="Shaitan" />
+		</bean>
+
+	<bean id="a" class="com.model.Actor">
+		
+		<property name="actorId" value="1" />
+		<property name="actorName" value="Ajay" />
+		<property name="movie" ref="m" />
+	</bean>
+
+</beans>
+-->
+
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:c="http://www.springframework.org/schema/c"
+
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+		<bean id="m" class="com.model.Movie" c:movieName="Ravan">
+			
+		</bean>
+
+	<bean id="a" class="com.model.Actor" c:actorId="1" c:actorName="Ajay" c:movie-ref="m">
+		
+	
+	</bean>
+
+</beans>
